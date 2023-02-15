@@ -7,3 +7,4 @@ class JOE {
 
 let joe1 = new JOE();
 joe1.shitPosting();
+// accessing the method....
