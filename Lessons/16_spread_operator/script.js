@@ -7,7 +7,15 @@ console.log("Max number from the list is", (max_Number = Math.max(...nums)));
 let names1 = ["JOE", "MAMA"];
 let names2 = ["DEEZ", "NUTS"];
 names1.push(...names2);
+// wont work names1.push(names1)
 console.log("CONCATTED ARRAYS", names1);
 
 // can also be used to print the elements of the array...
 console.log(...names1);
+
+
+const someObj = {
+    ...names1
+}
+
+console.log({...someObj, id: 23}) // concating older object to new object
